@@ -74,10 +74,7 @@ const Main = () => {
       <header className="header">
         <div className="header-wrapper">
           <h3>Товары</h3>
-          <div className="flex">
-            <p>Главная / </p>
-            <p>Товары</p>
-          </div>
+            <p>Главная / Товары</p>
         </div>
       </header>
       <div className="hero">
