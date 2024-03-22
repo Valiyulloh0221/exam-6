@@ -1,5 +1,6 @@
 import Icon1 from "../../assets/logo.png";
 import Icon2 from "../../assets/settings.png";
+import "../../scss/main.scss"
 import Icon3 from "../../assets/shop.png";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./style.scss";

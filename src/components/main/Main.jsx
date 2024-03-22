@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+import searchicon from "../../assets/search-svgrepo-com.svg"
 import Icon1 from "../../assets/logo.png";
+import "../../scss/main.scss"
 import Icon2 from "../../assets/settings.png";
 import Icon3 from "../../assets/shop.png";
 import IconEdit from "../../assets/edit.png";
@@ -83,13 +85,16 @@ const Main = () => {
           <div className="hero-top">
             <div className="flex">
               <span>Все товары ({products.length})</span>
-              <input
-                className="input"
-                placeholder="Поиск"
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
+              <div className="izlash">
+                <input
+                  className="input"
+                  placeholder="Поиск"
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                <img className="searchi" src={searchicon} alt="" />
+              </div>
             </div>
             <hr className="hr" />
             {loading ? (
@@ -137,14 +142,14 @@ const Main = () => {
                 </table>
               </div>
             )}
-
-            <Link to="/add/product" className="add-tovar">
-              + Новый товар
-            </Link>
           </div>
         </div>
       </div>
-      <footer className="footer"></footer>
+      <footer className="footer">
+        <Link to="/add/product" className="add-tovar">
+          + Новый товар
+        </Link>
+      </footer>
     </>
   );
 };
