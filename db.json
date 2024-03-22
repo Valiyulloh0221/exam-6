@@ -17,15 +17,6 @@
       "artikul": "212",
       "price": "178$",
       "discountPrice": "95$"
-    },
-    {
-      "id": "605",
-      "name": "microsoft",
-      "description": "very nice",
-      "brand": "12",
-      "artikul": "12212121",
-      "price": "280$",
-      "discountPrice": "240$"
     }
   ]
 }
